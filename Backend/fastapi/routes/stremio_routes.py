@@ -6,7 +6,7 @@ from Backend import db, __version__
 
 # --- Configuration ---
 BASE_URL = Telegram.BASE_URL
-ADDON_NAME = "Telegram"
+ADDON_NAME = "StreamPlex Media Server"
 ADDON_VERSION = __version__
 PAGE_SIZE = 15
 
@@ -45,8 +45,8 @@ async def get_manifest():
         "id": "telegram.media",
         "version": ADDON_VERSION,
         "name": ADDON_NAME,
-        "logo": "https://i.postimg.cc/XqWnmDXr/Picsart-25-10-09-08-09-45-867.png",
-        "description": "Streams movies and series from your Telegram.",
+        "logo": "https://i.postimg.cc/2jdqtQRG/plexlogo.png",
+        "description": "StreamPlex Addon for Movies and Series.",
         "types": ["movie", "series"],
         "resources": ["catalog", "meta", "stream"],
         "catalogs": [
