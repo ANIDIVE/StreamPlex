@@ -1,16 +1,14 @@
 {% extends "base.html" %}
 
-{% block title %}Stremio Setup Guide - Telegram Stremio{% endblock %}
+{% block title %}Stremio Setup Guide{% endblock %}
 
 {% block content %}
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <!-- Header -->
     <div class="mb-8 text-center">
         <h1 class="text-3xl font-bold">Stremio Addon Setup</h1>
-        <p class="theme-text-secondary mt-2">Install the Telegram Stremio addon to access your media through Stremio</p>
+        <p class="theme-text-secondary mt-2">Install the Streamplex addon to access your media through Stremio</p>
     </div>
-    
-    <!-- Installation Steps -->
+
     <div class="space-y-6">
         <div class="theme-card p-6 rounded-lg shadow">
             <div class="flex items-start space-x-4">
@@ -21,14 +19,14 @@
                     <h3 class="text-lg font-semibold mb-2">Copy the Addon URL</h3>
                     <p class="theme-text-secondary mb-4">Copy the manifest URL below to your clipboard</p>
                     <div class="bg-gray-100 p-4 rounded-md font-mono text-sm break-all">
-                        <span id="addon-url">{{ request.base_url }}stremio/manifest.json</span>
-                        <button onclick="copyToClipboard('addon-url')" 
+                        <span id="addon-url" class="text-black">{{ request.base_url }}stremio/manifest.json</span>
+                        <button onclick="copyToClipboard('addon-url')"
                                 class="ml-2 text-primary hover:underline">Copy</button>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <div class="theme-card p-6 rounded-lg shadow">
             <div class="flex items-start space-x-4">
                 <div class="w-8 h-8 theme-primary rounded-full flex items-center justify-center flex-shrink-0">
@@ -40,7 +38,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="theme-card p-6 rounded-lg shadow">
             <div class="flex items-start space-x-4">
                 <div class="w-8 h-8 theme-primary rounded-full flex items-center justify-center flex-shrink-0">
@@ -52,7 +50,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="theme-card p-6 rounded-lg shadow">
             <div class="flex items-start space-x-4">
                 <div class="w-8 h-8 theme-primary rounded-full flex items-center justify-center flex-shrink-0">
@@ -68,8 +66,7 @@
             </div>
         </div>
     </div>
-    
-    <!-- Additional Information -->
+
     <div class="theme-card p-6 rounded-lg shadow mt-8">
         <h2 class="text-xl font-semibold mb-4">Additional Information</h2>
         <div class="space-y-4">
@@ -93,14 +90,14 @@
 function copyToClipboard(elementId) {
     const element = document.getElementById(elementId);
     const text = element.textContent;
-    
+
     navigator.clipboard.writeText(text).then(() => {
         // Show success message
         const button = element.nextElementSibling;
         const originalText = button.textContent;
         button.textContent = 'Copied!';
         button.classList.add('text-green-600');
-        
+
         setTimeout(() => {
             button.textContent = originalText;
             button.classList.remove('text-green-600');
