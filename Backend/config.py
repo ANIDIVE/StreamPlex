@@ -20,8 +20,8 @@ class Telegram:
     UPSTREAM_REPO = getenv("UPSTREAM_REPO", "")
     UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "")
 
-    OWNER_ID = int(getenv("OWNER_ID", "5422223708"))
+    OWNER_ID = int(getenv("OWNER_ID", ""))
 
-    ADMIN_USERNAME = getenv("ADMIN_USERNAME", "fyvio")
-    ADMIN_PASSWORD = getenv("ADMIN_PASSWORD", "fyvio")
+    ADMIN_USERNAME = getenv("ADMIN_USERNAME", "")
+    ADMIN_PASSWORD = getenv("ADMIN_PASSWORD", "")
     
