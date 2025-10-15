@@ -156,6 +156,7 @@ async def public_status_page(request: Request):
         public_stats = {
             "status": "operational",
             "uptime": "99.9%",
+            "version": __version__,
             "total_content": total_movies + total_tv_shows,
             "databases_online": len(db_stats)
         }
@@ -163,6 +164,7 @@ async def public_status_page(request: Request):
         public_stats = {
             "status": "maintenance",
             "uptime": "N/A",
+            "version": __version__,
             "total_content": 0,
             "databases_online": 0
         }
