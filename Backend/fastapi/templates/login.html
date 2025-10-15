@@ -20,7 +20,7 @@
             <div>
                 <label for="username" class="block text-sm font-medium mb-2">Username</label>
                 <input type="text" id="username" name="username" required 
-                       class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent focus:shadow-md"
+                       class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent focus:shadow-md text-black"
                        autocomplete="username">
             </div>
             
@@ -28,7 +28,7 @@
                 <label for="password" class="block text-sm font-medium mb-2">Password</label>
                 <div class="relative">
                     <input type="password" id="password" name="password" required 
-                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent focus:shadow-md pr-10"
+                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent focus:shadow-md pr-10 text-black"
                            autocomplete="current-password">
                            
                     <button type="button" id="togglePassword" aria-label="Toggle password visibility"
@@ -45,11 +45,14 @@
                         </svg>
                     </button>
                 </div>
-                </div>
+            </div>
             
             <button type="submit" 
-                    class="w-full theme-primary text-white py-2 px-4 rounded-md hover:opacity-90 transition-opacity font-medium">
-                Sign In
+                    class="w-full theme-primary text-white py-3 px-4 rounded-full hover:opacity-90 transition-opacity font-medium flex items-center justify-center space-x-2">
+                <svg class="h-6 w-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 2a1 1 0 00-1 1v7H8.47l.95-3.07a1 1 0 00-.95-1.23H5a1 1 0 00-.95 1.23l.95 3.07H2a1 1 0 00-1 1v7a1 1 0 001 1h4a1 1 0 00.95-.77l-.95-3.07h3.53l-.95 3.07a1 1 0 00.95 1.23h3.53a1 1 0 00.95-1.23L16 14.92V21a1 1 0 001 1h6a1 1 0 001-1V3a1 1 0 00-1-1h-6zm0 18h-2v-6h2v6zm5-12a1 1 0 110-2h4a1 1 0 110 2h-4z"></path>
+                </svg>
+                <span>Sign In</span>
             </button>
         </form>
         
