@@ -55,7 +55,7 @@ async def file_receive_handler(client: Client, message: Message):
                     create_task(edit_message(
                         chat_id=message.chat.id,
                         msg_id=message.id,
-                        new_caption=f"* {message.caption}"
+                        new_caption=f"* <b>{message.caption}</b>"
                     ))
 
                 await file_queue.put((metadata_info, int(channel), msg_id, size, title))
