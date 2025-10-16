@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Dashboard - Telegram Stremio{% endblock %}
+{% block title %}StreamPlex - Dashboard{% endblock %}
 
 {% block content %}
 <div class="min-h-screen">
@@ -9,7 +9,6 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-4">
-                    <h1 class="text-3xl font-bold text-primary">System Overview</h1>
                 </div>
             </div>
         </div>
@@ -32,19 +31,19 @@
                     
                     <div class="space-y-4">
                         <div class="flex justify-between items-center py-3 px-4 bg-gray-50 rounded-lg">
-                            <span class="font-medium theme-text-secondary">Uptime</span>
+                            <span class="font-medium text-black">Uptime</span>
                             <span class="text-primary font-semibold">{{ system_stats.uptime or 'N/A' }}</span>
                         </div>
                         <div class="flex justify-between items-center py-3 px-4 bg-gray-50 rounded-lg">
-                            <span class="font-medium theme-text-secondary">Telegram Bot</span>
+                            <span class="font-medium text-black">Telegram Bot</span>
                             <span class="text-primary font-semibold">{{ system_stats.telegram_bot or '@StreamBot' }}</span>
                         </div>
                         <div class="flex justify-between items-center py-3 px-4 bg-gray-50 rounded-lg">
-                            <span class="font-medium theme-text-secondary">Connected Bots</span>
+                            <span class="font-medium text-black">Connected Bots</span>
                             <span class="text-primary font-semibold">{{ system_stats.connected_bots|default(0) }}</span>
                         </div>
                         <div class="flex justify-between items-center py-3 px-4 bg-gray-50 rounded-lg">
-                            <span class="font-medium theme-text-secondary">Backend Version</span>
+                            <span class="font-medium text-black">Backend Version</span>
                             <span class="text-primary font-semibold">v{{ system_stats.version or '1.0.0' }}</span>
                         </div>
                     </div>
@@ -215,7 +214,7 @@
 
             <!-- Manifest URL -->
             <div class="bg-gray-50 rounded-lg p-4">
-                <label class="block text-sm font-medium theme-text-secondary mb-2">Manifest URL</label>
+                <label class="block text-sm font-medium text-black mb-2">Manifest URL</label>
                 <div class="flex">
                     <input 
                         type="text" 
