@@ -59,7 +59,7 @@
                         {% if system_stats.loads and system_stats.loads|length > 0 %}
                             {% for bot_name, load in system_stats.loads.items() %}
                             <div class="flex justify-between items-center py-3 px-4 bg-gray-50 rounded-lg">
-                                <span class="font-medium theme-text-secondary">{{ bot_name }}</span>
+                                <span class="font-medium text-black">{{ bot_name }}</span>
                                 <div class="flex items-center space-x-2">
                                     <div class="w-16 bg-gray-200 rounded-full h-2">
                                         {% set max_load = system_stats.loads.values() | max if system_stats.loads.values() | max > 0 else 1 %}
@@ -185,19 +185,19 @@
 
             <!-- Installation Section -->
             <div class="bg-gray-50 rounded-lg p-6 mb-6">
-                <h4 class="text-lg font-semibold mb-4">Installation Instructions</h4>
+                <h4 class="text-lg font-semibold mb-4 text-black">Installation Instructions</h4>
                 <div class="space-y-3 theme-text-secondary">
                     <div class="flex items-start space-x-3">
                         <div class="w-6 h-6 theme-primary rounded-full flex items-center justify-center text-white text-sm font-semibold mt-0.5">1</div>
-                        <p>Copy the manifest URL below</p>
+                        <p class="text-black">Copy the manifest URL below</p>
                     </div>
                     <div class="flex items-start space-x-3">
-                        <div class="w-6 h-6 theme-primary rounded-full flex items-center justify-center text-white text-sm font-semibold mt-0.5">2</div>
-                        <p>Open Stremio and go to Addons section</p>
+                        <div class="w-6 h-6 theme-primary rounded-full flex items-center justify-center text-white text-sm font-semibold mt-0.7">2</div>
+                        <p class="text-black">Open Stremio and go to Addons section</p>
                     </div>
                     <div class="flex items-start space-x-3">
-                        <div class="w-6 h-6 theme-primary rounded-full flex items-center justify-center text-white text-sm font-semibold mt-0.5">3</div>
-                        <p>Paste the URL in "Add Addon" field and install</p>
+                        <div class="w-6 h-6 theme-primary rounded-full flex items-center justify-center text-white text-sm font-semibold mt-0.7">3</div>
+                        <p class="text-black">Paste the URL in "Add Addon" field and install</p>
                     </div>
                 </div>
             </div>
